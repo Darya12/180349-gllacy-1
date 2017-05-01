@@ -609,7 +609,7 @@ main{
 }
 .catalog .catalog-item:hover{
   padding-bottom: 18px;
-  margin-bottom: -58px;
+  margin-bottom: -62px;
 }
 .button-catalog{
   font-size: 18px;
@@ -736,7 +736,7 @@ h3{
   padding-top: 15px;
   padding-left: 21px;
   padding-right: 17px;
-  padding-bottom: 93px;
+  padding-bottom: 23px;
   border-radius: 15px;
 }
 .mail{
@@ -745,17 +745,14 @@ h3{
   line-height: 23px;
 }
 .button-mail{
-  float: right;
   color: #fefefe;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  margin-top: 18px;
   padding: 10px 20px;
-  margin-bottom: 30px;
+  margin-left: 10px;
 }
 .mail-form input[type="text"]{
-  float: left;
   width: 353px;
   height: 40px;
   padding-left: 15px;
@@ -1538,8 +1535,6 @@ footer{
   background-color: #ffffff;
   border: 1px solid #999999;
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 7px;
   resize: none;
 }
 .form input:hover,
@@ -1548,7 +1543,7 @@ footer{
 }
 .form input:focus,
 .form textarea:focus{
-  border: 1px solid #8fbdec;
+  border: 2px solid #8fbdec;
 }
 .form input:focus+.label-form,
 .form textarea:focus+.label-form{
@@ -1570,6 +1565,8 @@ footer{
   margin-bottom: 10px;
 }
 .form-group{
+  padding-top: 20px;
+  padding-bottom: 7px;
   position: relative;
 }
 .label-form{
