@@ -30,7 +30,7 @@ body > input[type="radio"] {
   width: 1146px;
   margin: 0 auto;
   position: relative;
-  padding-top: 262px;
+  padding-top: 260px;
   text-align: center;
   color: #ffffff;
 }
@@ -80,18 +80,17 @@ body > input[type="radio"] {
 }
 .slider-controls{
   position: absolute;
-  bottom: 21px;
-  left: 1px;
+  bottom: 22px;
   z-index: 20;
 }
 .slider-controls label{
   display: inline-block;
   width: 17px;
   height: 17px;
-  margin-right: 6px;
+  margin-right: 5px;
   vertical-align: top;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -131,9 +130,9 @@ h2{
   line-height: 41px;
   color: #ffffff;
   font-weight: bold;
-  margin-left: 19px;
+  margin-left: 18px;
   margin-top: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .clearfix::after{
   content: "";
@@ -156,13 +155,12 @@ header{
   width: 154px;
   height: 64px;
   margin-right: 10px;
+  margin-left: -2px;
 }
 .main-navigation ul{
   padding: 0;
   list-style: none;
   font-size: 0;
-  margin-top: 15px;
-  margin-bottom: 6px;
 }
 .menu-item{
   display: inline-block;
@@ -171,6 +169,8 @@ header{
   vertical-align: top;
   border-radius: 14px;
   position: relative;
+  padding-top: 15px;
+  padding-bottom: 6px;
 }
 .menu-item a{
   color: #ffffff;
@@ -178,7 +178,7 @@ header{
   text-decoration: none;
   padding: 7px 14px;
 }
-.visit{
+.visit {
   background-color: #d07058;
   border-radius: 14px;
 }
@@ -190,7 +190,7 @@ header{
   opacity: 0.3;
   width: 100%;
 }
-.visit a::after{
+.menu-item .visit::after{
   opacity: 0;
 }
 .menu-item:hover>a{
@@ -214,7 +214,7 @@ header{
   border-radius: 3px;
   background-color: #f7f6f3;
   position: absolute;
-  top: 23px;
+  top: 55px;
   left: -6px;
   z-index: 10;
   display: none;
@@ -253,6 +253,9 @@ header{
   color: #ffffff;
   background-color: #d07058;
 }
+.submenu-visit a::after{
+  opacity: 0;
+}
 .user-block{
   float: right;
   width: 300px;
@@ -267,9 +270,9 @@ header{
   float: right;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 23px;
-  margin-bottom: 6px;
-  margin-left: 11px;
+  padding-top: 23px;
+  padding-bottom: 6px;
+  padding-left: 9px;
 }
 .user-block-item a{
   display: block;
@@ -298,7 +301,7 @@ header{
   content: "";
   position: absolute;
   bottom: 7px;
-  left: 8px;
+  left: 7px;
   width: 17px;
   height: 17px;
   background-image: url("../img/sprite.png");
@@ -317,7 +320,7 @@ header{
   padding-right: 15px;
   padding-bottom: 20px;
   position: absolute;
-  top: 70px;
+  top: 61px;
   margin-left: -311px;
   display: none;
 }
@@ -328,7 +331,7 @@ header{
 }
 .login{
   padding-left: 44px;
-  padding-right: 16px;
+  padding-right: 18px;
   background-color: #ffffff;
   position: relative;
 }
@@ -343,7 +346,7 @@ header{
   content: "";
   position: absolute;
   bottom: 7px;
-  left: 15px;
+  left: 18px;
   width: 21px;
   height: 19px;
   background-image: url("../img/sprite.png");
@@ -364,13 +367,19 @@ header{
   position: absolute;
   z-index: 20;
   margin-left: -184px;
-  top: 70px;
+  top: 61px;
   display: none;
 }
 .login-form input[type="text"]{
   width: 211px;
   padding: 10px 15px;
   border-radius: 3px;
+}
+.login-form input[type="text"]:hover,
+.login-form input[type="text"]:focus,
+.search-form input[type="text"]:hover,
+.search-form input[type="text"]:focus{
+  padding: 9px 14px;
 }
 .entrance{
   float: right;
@@ -393,8 +402,8 @@ header{
   margin: 20px 0px;
 }
 .basket{
-  padding-left: 42px;
-  padding-right: 34px;
+  padding-left: 44px;
+  padding-right: 35px;
   position: relative;
 }
 .basket::before{
@@ -429,10 +438,11 @@ header{
   line-height: 16px;
   font-weight: bold;
   text-align: right;
+  margin-top: 12px;
 }
 .phone{
   font-size: 22px;
-  line-height:24px;
+  line-height:30px;
   font-weight: bold;
 }
 .purchase{
@@ -444,7 +454,7 @@ header{
   border-radius: 10px;
   position: absolute;
   z-index: 20;
-  top: 70px;
+  top: 61px;
   right: 100px;
   display: none;
 }
@@ -513,11 +523,10 @@ td{
 main{
   width: 1200px;
   margin: 0 auto;
-  /*margin-bottom: 40px;*/
 }
 .actions{
   width: 1146px;
-  margin: 41px 27px;
+  margin: 40px 26px;
   margin-bottom: 34px;
 }
 .action-item{
@@ -525,7 +534,7 @@ main{
   line-height: 22px;
   font-weight: bold;
   color: #ffffff;
-  margin: 0 20px;
+  margin: 0 19px;
 }
 .raspberries{
   float: left;
@@ -563,8 +572,8 @@ main{
   float: left;
   width: 267px;
   padding-top: 6px;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-left: 12px;
+  padding-right: 14px;
   position: relative;
 }
 .catalog-inner .catalog-item{
@@ -583,8 +592,8 @@ main{
   line-height: 45px;
   font-weight: bold;
   color: #ffffff;
-  margin-top: -62px;
-  margin-bottom: 20px;
+  margin-top: -63px;
+  margin-bottom: 21px;
 }
 .small{
   font-size: 30px;
@@ -628,7 +637,7 @@ main{
 .production{
   width: 1146px;
   margin: 0 27px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   background-image: url("../img/wafer.jpg");
   background-repeat: no-repeat;
   background-color: #ebddbe;
@@ -647,7 +656,7 @@ main{
   content: "";
   position: absolute;
   top: -15px;
-  left: 16px;
+  left: 20px;
   width: 49px;
   height: 49px;
   background-image: url("../img/sprite.png");
@@ -658,7 +667,7 @@ main{
   content: "";
   position: absolute;
   top: -15px;
-  left: 16px;
+  left: 20px;
   width: 49px;
   height: 49px;
   background-image: url("../img/sprite.png");
@@ -696,7 +705,7 @@ h3{
 }
 .news{
   width: 1146px;
-  margin: 0 27px;
+  margin: 0 26px;
 }
 .blog{
   float: left;
@@ -708,8 +717,8 @@ h3{
 }
 .new{
   padding-left: 20px;
-  padding-top: 10px;
-  margin-bottom: 7px;
+  padding-top: 8px;
+  margin-bottom: 4px;
 }
 .topic{
   display: block;
@@ -719,7 +728,7 @@ h3{
   color: #323232;
   margin-left: 20px;
   margin-right: 250px;
-  margin-bottom: 76px;
+  margin-bottom: 82px;
 }
 .topic:hover{
   color:#e84d37;
@@ -749,8 +758,8 @@ h3{
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  padding: 10px 20px;
-  margin-left: 10px;
+  padding: 9px 22px;
+  margin-left: 5px;
 }
 .mail-form input[type="text"]{
   width: 353px;
@@ -758,13 +767,18 @@ h3{
   padding-left: 15px;
   border-radius: 3px;
 }
+.mail-form input[type="text"]:hover,
+.mail-form input[type="text"]:focus{
+  width: 351px;
+  height: 38px;
+}
 .map-block{
   min-width: 1200px;
   background-image: url("../img/map.jpg");
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
-  margin-top: 44px;
+  margin-top: 41px;
 }
 .yandex-map{
   height: 430px;
@@ -785,7 +799,7 @@ h3{
   background-color: #fefefe;
   margin-top: 62px;
   margin-bottom: 62px;
-  margin-right: 25px;
+  margin-right: 27px;
   padding: 30px 25px;
   border-radius: 15px;
 }
@@ -824,7 +838,7 @@ h3{
   line-height: 22px;
   font-weight: 400;
   margin: 0px;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 .button-address{
   padding: 10px 28px;
@@ -840,7 +854,7 @@ h3{
   list-style: none;
   font-size: 0;
   margin: 0;
-  margin-top: -30px;
+  margin-top: -34px;
 }
 .breadcrumbs-item {
   display: inline-block;
@@ -1020,15 +1034,11 @@ select::-ms-expand{
 .fatness{
   float: left;
   padding-right: 15px;
-  /*width: 416px;
-  padding-right: 280px;*/
 }
 .fillers{
   float: left;
   margin-top: 16px;
   padding-right: 15px;
-  /*width: 702px;
-  padding-right: 280px;*/
 }
 .button-filter-content{
   float: left;
@@ -1377,7 +1387,7 @@ footer{
   list-style: none;
   font-size: 0;
   margin: 0px;
-  margin-top: 32px;
+  margin-top: 34px;
 }
 .footer-about-us a:hover,
 .footer-copyright a:hover{
@@ -1409,6 +1419,8 @@ footer{
   position: absolute;
   width: 17px;
   height: 13px;
+  left: -2px;
+  top: 3px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position:  -252px -79px;
@@ -1440,6 +1452,7 @@ footer{
 }
 .icon-html{
   margin-top: 17px;
+  margin-left: 7px;
   margin-bottom: 0px;
 }
 .form-content{
@@ -1560,13 +1573,19 @@ footer{
   border-radius: 3px;
   resize: none;
 }
+.modal-form input[type="text"]:hover,
+.modal-form input[type="text"]:focus,
+.modal-form textarea:hover,
+.modal-form textarea:focus{
+  padding: 8px 13px;
+}
 .button-modal{
   margin-left: 300px;
   margin-bottom: 10px;
 }
 .form-group{
-  padding-top: 20px;
-  padding-bottom: 7px;
+  padding-top: 16px;
+  padding-bottom: 10px;
   position: relative;
 }
 .label-form{
