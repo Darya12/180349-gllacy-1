@@ -6,7 +6,7 @@ body{
   font-family: "Roboto", "Arial", sans-serif;
   background-color: #849d8f;
 }
-body > input[type="radio"] {
+body > input[type="radio"]{
   display: none;
 }
 .site-wrapper{
@@ -40,7 +40,7 @@ body > input[type="radio"] {
 .slide-name{
   width: 680px;
   margin: 0 auto;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   font-weight: bold;
   line-height: 61px;
   font-size: 60px;
@@ -66,13 +66,13 @@ body > input[type="radio"] {
   font-weight: bold;
   line-height: 44px;
 }
-.button:hover {
+.button:hover{
   background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
-.button:active {
+.button:active{
   background: -moz-linear-gradient(top, #d74632 0%, #e1613e 100%);
   background: -webkit-linear-gradient(top, #d74632 0%, #e1613e 100%);
   background: linear-gradient(to bottom, #d74632 0%, #e1613e 100%);
@@ -96,7 +96,7 @@ body > input[type="radio"] {
 }
 #btn-1:checked ~ .site-wrapper #slide-1,
 #btn-2:checked ~ .site-wrapper #slide-2,
-#btn-3:checked ~ .site-wrapper #slide-3 {
+#btn-3:checked ~ .site-wrapper #slide-3{
   display: block;
 }
 #btn-1:checked ~ .site-wrapper{
@@ -113,7 +113,7 @@ body > input[type="radio"] {
 }
 #btn-1:checked ~ .site-wrapper label[for="btn-1"],
 #btn-2:checked ~ .site-wrapper label[for="btn-2"],
-#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+#btn-3:checked ~ .site-wrapper label[for="btn-3"]{
   background-color: #ffffff;
 }
 h1{
@@ -178,7 +178,7 @@ header{
   text-decoration: none;
   padding: 7px 14px;
 }
-.visit {
+.visit{
   background-color: #d07058;
   border-radius: 14px;
 }
@@ -542,6 +542,7 @@ main{
   background-image: url("../img/raspberry.jpg");
   background-repeat: no-repeat;
   background-color: #d34869;
+  background-size: cover;
   border-radius: 15px;
 }
 .chocolate{
@@ -550,6 +551,7 @@ main{
   background-image: url("../img/chocolate.jpg");
   background-repeat: no-repeat;
   background-color: #40271d;
+  background-size: cover;
   border-radius: 15px;
 }
 .button-action{
@@ -636,8 +638,8 @@ main{
 }
 .production{
   width: 1146px;
-  margin: 0 27px;
-  margin-bottom: 41px;
+  margin: 0 26px;
+  margin-bottom: 40px;
   background-image: url("../img/wafer.jpg");
   background-repeat: no-repeat;
   background-color: #ebddbe;
@@ -646,16 +648,16 @@ main{
 .production-item{
   float: left;
   width: 478px;
-  padding-left: 73px;
-  padding-right: 20px;
-  padding-bottom: 8px;
+  padding-left: 76px;
+  padding-right: 13px;
+  padding-bottom: 9px;
   margin-top: 0px;
   position: relative;
 }
 .production-item::before{
   content: "";
   position: absolute;
-  top: -15px;
+  top: -14px;
   left: 20px;
   width: 49px;
   height: 49px;
@@ -666,8 +668,6 @@ main{
 .production-item:nth-child(4)::before{
   content: "";
   position: absolute;
-  top: -15px;
-  left: 20px;
   width: 49px;
   height: 49px;
   background-image: url("../img/sprite.png");
@@ -677,8 +677,6 @@ main{
 .production-item:nth-child(3)::before{
   content: "";
   position: absolute;
-  top: -15px;
-  left: 16px;
   width: 49px;
   height: 49px;
   background-image: url("../img/sprite.png");
@@ -688,8 +686,6 @@ main{
 .production-item:last-child::before{
   content: "";
   position: absolute;
-  top: -15px;
-  left: 16px;
   width: 49px;
   height: 49px;
   background-image: url("../img/sprite.png");
@@ -700,7 +696,7 @@ h3{
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  padding-top: 25px;
+  padding-top: 24px;
   padding-left: 20px;
 }
 .news{
@@ -742,10 +738,10 @@ h3{
 }
 .white{
   background-color: #f8f7f4;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-left: 21px;
   padding-right: 17px;
-  padding-bottom: 23px;
+  padding-bottom: 26px;
   border-radius: 15px;
 }
 .mail{
@@ -758,13 +754,14 @@ h3{
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  padding: 9px 22px;
-  margin-left: 5px;
+  padding: 9px 23px;
+  padding-bottom: 11px;
+  margin-left: 7px;
 }
 .mail-form input[type="text"]{
-  width: 353px;
-  height: 40px;
-  padding-left: 15px;
+  width: 352px;
+  height: 39px;
+  padding-left: 13px;
   border-radius: 3px;
 }
 .mail-form input[type="text"]:hover,
@@ -777,8 +774,9 @@ h3{
   background-image: url("../img/map.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
-  margin-top: 41px;
+  margin-top: 40px;
 }
 .yandex-map{
   height: 430px;
@@ -856,7 +854,7 @@ h3{
   margin: 0;
   margin-top: -34px;
 }
-.breadcrumbs-item {
+.breadcrumbs-item{
   display: inline-block;
   font-size: 14px;
   line-height: 16px;
@@ -889,7 +887,7 @@ h3{
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  padding-right: 19px;
+  padding-right: 16px;
   padding-left: 33px;
   color: #ffffff;
   cursor: pointer;
@@ -992,7 +990,6 @@ h3{
 }
 .sorting{
   float: left;
-  /*width: 195px;*/
   padding-right: 15px;
 }
 .filter-select{
@@ -1046,16 +1043,13 @@ select::-ms-expand{
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
-  padding: 7px 27px;
+  padding: 7px 28px;
   margin-top: 38px;
   border: 2px solid #ffffff;
 }
 .button-filter-content:hover{
   color: #323232;
   background-color: rgba(255, 255, 255, 1);
-}
-.button-filter-content:active{
-  /*box-shadow: ;*/
 }
 .range-controls{
   margin-top: 8px;
@@ -1094,6 +1088,7 @@ select::-ms-expand{
 .nav-paginator{
   text-align: right;
   margin: 0 27px;
+  margin-bottom: -3px;
   padding-bottom: 30px;
   list-style: none;
   font-size: 0;
@@ -1155,182 +1150,182 @@ select::-ms-expand{
   background-color: rgba(255, 255, 255, 0.0);
   border-radius: 0px;
 }
-.sprite {
+.sprite{
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     display: block;
 }
-.sprite-icon-basket {
+.sprite-icon-basket{
     width: 21px;
     height: 20px;
     background-position: -10px -10px;
 }
-.sprite-icon-basket-without {
+.sprite-icon-basket-without{
     width: 21px;
     height: 20px;
     background-position: -51px -10px;
 }
-.sprite-icon-checkbox-off {
+.sprite-icon-checkbox-off{
     width: 20px;
     height: 20px;
     background-position: -92px -10px;
 }
-.sprite-icon-checkbox-on {
+.sprite-icon-checkbox-on{
     width: 20px;
     height: 20px;
     background-position: -132px -10px;
 }
-.sprite-icon-close {
+.sprite-icon-close{
     width: 11px;
     height: 11px;
     background-position: -172px -10px;
 }
-.sprite-icon-cow {
+.sprite-icon-cow{
     width: 48px;
     height: 49px;
     background-position: -203px -10px;
 }
-.sprite-icon-disabled-checkbox-off {
+.sprite-icon-disabled-checkbox-off{
     width: 20px;
     height: 20px;
     background-position: -10px -79px;
 }
-.sprite-icon-disabled-checkbox-on {
+.sprite-icon-disabled-checkbox-on{
     width: 20px;
     height: 20px;
     background-position: -50px -79px;
 }
-.sprite-icon-disabled-radio-off {
+.sprite-icon-disabled-radio-off{
     width: 21px;
     height: 22px;
     background-position: -90px -79px;
 }
-.sprite-icon-disabled-radio-on {
+.sprite-icon-disabled-radio-on{
     width: 21px;
     height: 22px;
     background-position: -131px -79px;
 }
-.sprite-icon-entrance {
+.sprite-icon-entrance{
     width: 21px;
     height: 19px;
     background-position: -172px -79px;
 }
-.sprite-icon-entrance-white {
+.sprite-icon-entrance-white{
     width: 21px;
     height: 19px;
     background-position: -213px -79px;
 }
-.sprite-icon-fb {
+.sprite-icon-fb{
     width: 38px;
     height: 38px;
     background-position: -172px -118px;
 }
-.sprite-icon-heart {
+.sprite-icon-heart{
     width: 15px;
     height: 13px;
     background-position: -254px -79px;
 }
-.sprite-icon-hover-checkbox-off {
+.sprite-icon-hover-checkbox-off{
     width: 20px;
     height: 20px;
     background-position: -254px -112px;
 }
-.sprite-icon-hover-checkbox-on {
+.sprite-icon-hover-checkbox-on{
     width: 20px;
     height: 20px;
     background-position: -10px -152px;
 }
-.sprite-icon-hover-radio-off {
+.sprite-icon-hover-radio-off{
     width: 21px;
     height: 22px;
     background-position: -50px -152px;
 }
-.sprite-icon-hover-radio-on {
+.sprite-icon-hover-radio-on{
     width: 21px;
     height: 22px;
     background-position: -91px -152px;
 }
-.sprite-icon-html {
+.sprite-icon-html{
     width: 108px;
     height: 38px;
     background-position: -132px -176px;
 }
-.sprite-icon-ice {
+.sprite-icon-ice{
     width: 49px;
     height: 49px;
     background-position: -271px -10px;
 }
-.sprite-icon-ice-1 {
+.sprite-icon-ice-1{
     width: 33px;
     height: 33px;
     background-position: -294px -79px;
 }
-.sprite-icon-ice-2 {
+.sprite-icon-ice-2{
     width: 33px;
     height: 33px;
     background-position: -294px -132px;
 }
-.sprite-icon-incta {
+.sprite-icon-incta{
     width: 38px;
     height: 38px;
     background-position: -260px -185px;
 }
-.sprite-icon-leaf {
+.sprite-icon-leaf{
     width: 49px;
     height: 49px;
     background-position: -10px -243px;
 }
-.sprite-icon-marker {
+.sprite-icon-marker{
     width: 9px;
     height: 5px;
     background-position: -132px -132px;
 }
-.sprite-icon-marker-black {
+.sprite-icon-marker-black{
     width: 9px;
     height: 5px;
     background-position: -318px -185px;
 }
-.sprite-icon-next {
+.sprite-icon-next{
     width: 9px;
     height: 14px;
     background-position: -79px -210px;
 }
-.sprite-icon-prev {
+.sprite-icon-prev{
     width: 9px;
     height: 14px;
     background-position: -318px -210px;
 }
-.sprite-icon-radio-off {
+.sprite-icon-radio-off{
     width: 21px;
     height: 22px;
     background-position: -79px -244px;
 }
-.sprite-icon-radio-on {
+.sprite-icon-radio-on{
     width: 21px;
     height: 22px;
     background-position: -120px -244px;
 }
-.sprite-icon-search {
+.sprite-icon-search{
     width: 17px;
     height: 17px;
     background-position: -161px -244px;
 }
-.sprite-icon-search-white {
+.sprite-icon-search-white{
     width: 17px;
     height: 17px;
     background-position: -198px -244px;
 }
-.sprite-icon-thermometer {
+.sprite-icon-thermometer{
     width: 48px;
     height: 49px;
     background-position: -235px -243px;
 }
-.sprite-icon-twitter {
+.sprite-icon-twitter{
     width: 38px;
     height: 38px;
     background-position: -303px -244px;
 }
-.sprite-icon-vk {
+.sprite-icon-vk{
     width: 38px;
     height: 38px;
     background-position: -79px -302px;
@@ -1351,7 +1346,7 @@ footer{
   list-style: none;
   font-size: 0;
 }
-.social-btn-item {
+.social-btn-item{
   display: inline-block;
   vertical-align: top;
 }
@@ -1387,7 +1382,7 @@ footer{
   list-style: none;
   font-size: 0;
   margin: 0px;
-  margin-top: 34px;
+  margin-top: 35px;
 }
 .footer-about-us a:hover,
 .footer-copyright a:hover{
@@ -1451,7 +1446,7 @@ footer{
   margin: 0px;
 }
 .icon-html{
-  margin-top: 17px;
+  margin-top: 20px;
   margin-left: 7px;
   margin-bottom: 0px;
 }
