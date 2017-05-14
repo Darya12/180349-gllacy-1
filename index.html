@@ -5,12 +5,12 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <input type="radio" id="btn-1" name="toogle" checked>
-    <input type="radio" id="btn-2" name="toogle">
-    <input type="radio" id="btn-3" name="toogle">
+    <input type="radio" id="btn-1" class="btn btn-1" name="toogle" checked>
+    <input type="radio" id="btn-2" class="btn btn-2" name="toogle">
+    <input type="radio" id="btn-3" class="btn btn-3" name="toogle">
     <div class="site-wrapper">
       <header class="main-header clearfix">
         <nav class="main-navigation">
@@ -86,17 +86,17 @@
           <p class="user-time">С 10 до 20, ежедневно<br><span class="phone">8 812 450-25-25</span></p>
         </div>
       </header>
-      <main>
+      <main class="main-content">
         <div class="slider">
-          <div class="slide" id="slide-1">
+          <div class="slide slide-1">
             <p class="slide-name">Крем-брюле и пломбир с малиновым джемом</p>
             <a class="button button-slide" href="#">Давайте оба!</a>
           </div>
-          <div class="slide" id="slide-2">
+          <div class="slide slide-2">
             <p class="slide-name">Шоколадный пломбир и лимонный сорбет</p>
             <a class="button button-slide" href="#">Давайте оба!</a>
           </div>
-          <div class="slide" id="slide-3">
+          <div class="slide slide-3">
             <p class="slide-name">Пломбир с помадкой и лимонный щербет</p>
             <a class="button button-slide" href="#">Давайте оба!</a>
           </div>
@@ -108,12 +108,12 @@
         </div>
         <section class="actions clearfix">
           <div class="raspberries">
-            <h2>Малинка даром!</h2>
+            <h2 class="header-2">Малинка даром!</h2>
             <p class="action-item">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="button button-action" href="#">Хочу варенье!</a>
           </div>
           <div class="chocolate">
-            <h2>Шоколадки даром!</h2>
+            <h2 class="header-2">Шоколадки даром!</h2>
             <p class="action-item">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a class="button button-action" href="#">Хочу шoколадки!</a>
           </div>
@@ -149,7 +149,7 @@
           </div>
         </section>
         <section class="production clearfix">
-          <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+          <h3 class="header-3">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
           <p class="production-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           <p class="production-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           <p class="production-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
@@ -183,7 +183,7 @@
             <p class="order-phone">Для заказов по телефону:</p>
             <p class="phone-2">8 812 450-25-25</p>
             <p class="phone-time">(с 10 до 20 ежедневно)</p>
-            <a class="button button-address" href="#">Форма обратной связи</a>
+            <a class="button button-address" href="form.html">Форма обратной связи</a>
           </div>
         </div>
       </section>
@@ -191,16 +191,16 @@
         <section class="footer-social">
           <ul class="social-btn">
             <li class="social-btn-item">
-              <a class="social-btn-item social-btn-tw" href="#">Твиттер</a>
+              <a class="social-btn-item social-btn-tw" href="#" title="Твиттер">Твиттер</a>
             </li>
             <li class="social-btn-item">
-              <a class="social-btn-item social-btn-inst" href="#">Инстаграм</a>
+              <a class="social-btn-item social-btn-inst" href="#" title="Инстаграм">Инстаграм</a>
             </li>
             <li class="social-btn-item">
-              <a class="social-btn-item social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn-item social-btn-fb" href="#" title="Фейсбук">Фейсбук</a>
             </li>
             <li class="social-btn-item">
-              <a class="social-btn-item social-btn-vk" href="#">В контакте</a>
+              <a class="social-btn-item social-btn-vk" href="#" title="В контакте">В контакте</a>
             </li>
           </ul>
         </section>
@@ -221,7 +221,7 @@
           </ul>
         </section>
         <section class="footer-copyright">
-          <a href="#"><img class="icon-html" src="img/icon-html.png" width="108" height="38" alt="Логотип академии"></a>
+          <a href="#" title="Логотип академии"><img class="icon-html" src="img/icon-html.png" width="108" height="38" alt="Логотип академии"></a>
           <p class="copyright">Сделано в<a href="#"><span class="underline">HTML Academy</span></a>&#169; 2017</p>
         </section>
       </footer>
@@ -246,7 +246,7 @@
       </form>
     </div>
     <div class="modal-overlay"></div>
-    <script src="js/popup.js"></script>
+    <script src="js/popup.min.js"></script>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=MndqPa8BDbB38QVmbERDPUqPgoPm-y3f&amp;width=100%25&amp;height=430&amp;id=yandex-map">
     </script>
   </body>

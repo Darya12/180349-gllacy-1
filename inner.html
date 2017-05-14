@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header clearfix">
@@ -47,34 +47,34 @@
           <li class="user-block-item block-basket">
             <a class="basket not-empty" href="#">2 товара</a>
             <div class="purchase">
-              <table>
+              <table class="view">
                 <tr>
-                  <td class="close">
+                  <td class="view-line close">
                     <a href="#">
                       <span class="delete"></span>
                     </a>
                   </td>
-                  <td class="icon"><img src="img/icon-ice-1.png" width="33" height="33" alt="Фото"></td>
-                  <td class="ice">Пломбир с апельсиновым джемом</td>
-                  <td class="ice-price">1,5 кг x <span class="sum">200 руб.</span></td>
-                  <td class="price-total">300 руб.</td>
+                  <td class="view-line icon"><img src="img/icon-ice-1.png" width="33" height="33" alt="Фото"></td>
+                  <td class="view-line ice">Пломбир с апельсиновым джемом</td>
+                  <td class="view-line ice-price">1,5 кг x <span class="sum">200 руб.</span></td>
+                  <td class="view-line price-total">300 руб.</td>
                 </tr>
                 <tr>
-                  <td class="close">
+                  <td class="view-line close">
                     <a href="#">
                       <span class="delete"></span>
                     </a>
                   </td>
-                  <td class="icon"><img src="img/icon-ice-2.png" width="33" height="33" alt="Фото"></td>
-                  <td class="ice">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="ice-price">1,5 кг x <span class="sum">300 руб.</span></td>
-                  <td class="price-total">450 руб.</td>
+                  <td class="view-line icon"><img src="img/icon-ice-2.png" width="33" height="33" alt="Фото"></td>
+                  <td class="view-line ice">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="view-line ice-price">1,5 кг x <span class="sum">300 руб.</span></td>
+                  <td class="view-line price-total">450 руб.</td>
                 </tr>
                 <tr>
-                  <td colspan="5" class="total">Итого: 750 руб.</td>
+                  <td colspan="5" class="view-line total">Итого: 750 руб.</td>
                 </tr>
                 <tr>
-                  <td class="order" colspan="5"><button type="submit" class="button button-purchase">Оформить заказ</button></td>
+                  <td class="view-line order" colspan="5"><button type="submit" class="button button-purchase">Оформить заказ</button></td>
                 </tr>
               </table>
             </div>
@@ -114,7 +114,7 @@
         <p class="user-time">С 10 до 20, ежедневно<br><span class="phone">8 812 450-25-25</span></p>
       </div>
     </header>
-    <main>
+    <main class="main-content">
       <nav class="breadcrumbs">
         <ul class="nav-breadcrumbs">
           <li class="breadcrumbs-item">
@@ -132,7 +132,7 @@
           </li>
         </ul>
       </nav>
-      <h1>Сливочное мороженое</h1>
+      <h1 class="header-1">Сливочное мороженое</h1>
       <form class="filters clearfix" action="#" method="get">
         <div class="sorting">
           <p class="filter filter-sorting">Сортировка:</p>
@@ -162,19 +162,19 @@
           <p class="filter filter-fatness">Жирность</p>
           <div class="filter-content">
             <label class="filter-label label-radio">
-              <input type="radio" name="fatness">
+              <input type="radio" class="radio" name="fatness">
               <span class="radio-indicator"></span>0%
             </label>
             <label class="filter-label label-radio">
-              <input type="radio" name="fatness" checked>
+              <input type="radio" class="radio" name="fatness" checked>
               <span class="radio-indicator"></span>до 10%
             </label>
             <label class="filter-label label-radio">
-              <input type="radio" name="fatness">
+              <input type="radio" class="radio" name="fatness">
               <span class="radio-indicator"></span>до 30%
             </label>
             <label class="filter-label label-radio">
-              <input type="radio" name="fatness">
+              <input type="radio" class="radio" name="fatness">
               <span class="radio-indicator"></span>выше 30%
             </label>
           </div>
@@ -183,23 +183,23 @@
           <p class="filter filter-fillers">Наполнители:</p>
           <div class="filter-content">
             <label class="filter-label label-checkbox">
-              <input type="checkbox" checked>шоколадные
+              <input type="checkbox" class="checkbox" checked>шоколадные
               <span class="checkbox-indicator"></span>
             </label>
             <label class="filter-label label-checkbox">
-              <input type="checkbox" checked>сахарные присыпки
+              <input type="checkbox" class="checkbox" checked>сахарные присыпки
               <span class="checkbox-indicator"></span>
             </label>
             <label class="filter-label label-checkbox">
-              <input type="checkbox">фрукты
+              <input type="checkbox" class="checkbox">фрукты
               <span class="checkbox-indicator"></span>
             </label>
             <label class="filter-label label-checkbox">
-              <input type="checkbox">сиропы
+              <input type="checkbox" class="checkbox">сиропы
               <span class="checkbox-indicator"></span>
             </label>
             <label class="filter-label label-checkbox">
-              <input type="checkbox">джемы
+              <input type="checkbox" class="checkbox">джемы
               <span class="checkbox-indicator"></span>
             </label>
           </div>
@@ -316,16 +316,16 @@
       <section class="footer-social">
         <ul class="social-btn">
           <li class="social-btn-item">
-            <a class="social-btn-item social-btn-tw" href="#">Твиттер</a>
+            <a class="social-btn-item social-btn-tw" href="#" title="Твиттер">Твиттер</a>
           </li>
           <li class="social-btn-item">
-            <a class="social-btn-item social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn-item social-btn-inst" href="#" title="Инстаграм">Инстаграм</a>
           </li>
           <li class="social-btn-item">
-            <a class="social-btn-item social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn-item social-btn-fb" href="#" title="Фейсбук">Фейсбук</a>
           </li>
           <li class="social-btn-item">
-            <a class="social-btn-item social-btn-vk" href="#">В контакте</a>
+            <a class="social-btn-item social-btn-vk" href="#" title="В контакте">В контакте</a>
           </li>
         </ul>
       </section>
@@ -346,7 +346,7 @@
         </ul>
       </section>
       <section class="footer-copyright">
-        <a href="#"><img class="icon-html" src="img/icon-html.png" width="108" height="38" alt="Логотип академии"></a>
+        <a href="#" title="Логотип академии"><img class="icon-html" src="img/icon-html.png" width="108" height="38" alt="Логотип академии"></a>
         <p class="copyright">Сделано в<a href="#"><span class="underline">HTML Academy</span></a>&#169; 2017</p>
       </section>
     </footer>
